@@ -8,7 +8,7 @@ import {Profile,Cadastro,Edicao} from '../index';
 export default function AreaRestrita() {
     const Tab = createMaterialBottomTabNavigator();
     const [user, setUser] = useState(null);
-    
+
     useEffect(()=>{
         async function getUser(){
             let response = await AsyncStorage.getItem('userData');

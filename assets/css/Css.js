@@ -69,10 +69,10 @@ const css = StyleSheet.create({
     },
 
     area__tab: {
-      backgroundColor: '#333',
-      fontSize: 20,
+      backgroundColor: '#DC483C',
+      fontSize: 35,
       fontWeight: 'bold',
-      color: '#333'
+      color: '#3F3F41'
     }
 
   });
