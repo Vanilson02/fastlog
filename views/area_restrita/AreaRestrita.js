@@ -28,7 +28,7 @@ export default function AreaRestrita() {
                 barStyle={css.area__tab}
         >
             <Tab.Screen
-                    name="Profile"
+                    name="Perfil"
                     component={Profile}
                     options={{
                     tabBarIcon:()=>(
@@ -46,7 +46,7 @@ export default function AreaRestrita() {
                 }}
             />
             <Tab.Screen
-                    name="Edicao"
+                    name="Edição"
                     component={Edicao}
                     options={{
                     tabBarIcon:()=>(
