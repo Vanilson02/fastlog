@@ -24,6 +24,7 @@ export default function AreaRestrita() {
         <Tab.Navigator
                 activeColor='#999'
                 inactiveColor='#fff'
+                initialRouteName="Profile"
                 barStyle={css.area__tab}
         >
             <Tab.Screen
