@@ -3,7 +3,8 @@
     "username": "root",
     "password": null,
     "database": "fastlog",
-    "host": "127.0.0.1",
+    "host": "localhost",
+    "port": 3308,
     "dialect": "mysql"
   },
   "test": {
