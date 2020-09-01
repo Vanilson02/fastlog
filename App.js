@@ -5,7 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>funcionando dentro do esperado!</Text>
+      <Text>E se estiver funcionando dentro do esperado!</Text>
       <StatusBar style="auto" />
     </View>
   );
