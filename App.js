@@ -19,6 +19,7 @@ export default function App() {
           component={Home}
           options = {{
             title:"FastLog",
+            headerTitle: "FastLog",
             headerStyle: {backgroundColor:'#e8e8e8'},
             headerTintColor:'#3f3f41',
             headerTitleStyle:{fontWeight:'bold',alignSelf:'center'}
