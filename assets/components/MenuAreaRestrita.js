@@ -6,9 +6,9 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default function MenuAreaRestrita(props){
     
-    async function logout(){
-        await AsyncStorage.clear();
-        navigation.navigate('Login');
+    logout = async() => {
+        await AsyncStorage.clear();      
+        props.navigation.navigate('Home');
     }
 
     return (
