@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const models = require('./models');
+const { default: AsyncStorage } = require('@react-native-community/async-storage');
 
 
 const app = express();
@@ -24,6 +25,24 @@ app.post('/login',async(req,res)=>{
     }else{
         res.send(response);
         console.log(response);
+    }
+});
+
+app.post('/verifyPass',async(req,res)=>{
+    let response = await user.findOne({
+        where:{id:req.body.id, password:req.body.senhaAntiga}
+    });
+    if(response === null){
+        res.send(JSON.stringify('Senha antiga não confere'));
+    }else{
+        if(req.body.novaSenha === req.body.confNovaSenha){
+            response.password = req.body.novaSenha;
+            response.save();
+            res.send(JSON.stringify('Senha atualizada com sucesso!'));
+        }else{
+            res.send(JSON.stringify('Nova senha e confirmação não confere'));
+
+        }
     }
 });
 

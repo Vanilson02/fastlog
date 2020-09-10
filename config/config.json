@@ -20,5 +20,7 @@
     "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "mysql"
-  }
+  },
+
+  "urlRoot": "http://10.0.0.107:3000/"
 }
