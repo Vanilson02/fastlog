@@ -33,14 +33,14 @@ app.post('/verifyPass',async(req,res)=>{
         where:{id:req.body.id, password:req.body.senhaAntiga}
     });
     if(response === null){
-        res.send(JSON.stringify('Senha antiga não confere'));
+        res.send(JSON.stringify('Senha antiga não confere!'));
     }else{
         if(req.body.novaSenha === req.body.confNovaSenha){
             response.password = req.body.novaSenha;
             response.save();
             res.send(JSON.stringify('Senha atualizada com sucesso!'));
         }else{
-            res.send(JSON.stringify('Nova senha e confirmação não confere'));
+            res.send(JSON.stringify('Erro ao confirmar nova senha!'));
 
         }
     }

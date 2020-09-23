@@ -103,7 +103,45 @@ const css = StyleSheet.create({
 
   button__logout:{
       textAlign:'right'
-  }
+  },
+
+  btnProfileAlt: {
+    padding: 12,
+    backgroundColor: "#3f3f41",
+    alignSelf: "center",
+    borderRadius: 10
+  },
+
+  profAlt__input: {
+    backgroundColor: "#c5c5c5",
+    fontSize: 18,
+    padding: 7,
+    marginBottom: 10,
+    borderRadius: 10
+  },
+
+  profAlt__btnText: {
+    fontWeight: "bold",
+    fontSize: 12,
+    color: "#fff"
+  },
+
+  profAlt__msg:(cor='#ff0000')=> ({
+    fontWeight: "bold",
+    fontSize: 18,
+    color: cor,
+    marginTop: 5,
+    marginBottom: 15,
+    display: 'flex',
+    
+  }),
+
+  profDados: {
+    alignItems:'center',
+    justifyContent:'center',
+    padding: 20,
+  },
+
 
   });
   export {css};
