@@ -50,6 +50,8 @@ export default function Profile({navigation}) {
        let json = await response.json();
        if(json === "Senha atualizada com sucesso!"){
            setCor("#4888f4");
+       }else{
+           setCor("#ff0000");
        }
        
        setMsg(json);
