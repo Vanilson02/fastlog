@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "BrenoAlves_666",
+    "password": "",
     "database": "fastlog",
     "host": "localhost",
     "port": 3308,
@@ -22,5 +22,5 @@
     "dialect": "mysql"
   },
 
-  "urlRoot": "http://192.168.101.58:3000/"
+  "urlRoot": ""
 }
